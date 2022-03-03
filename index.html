@@ -18,6 +18,14 @@
     <div id=" count-3">0</div>
 <label >Name Me To Play </label><br>
 <input type="text" id="myText"><br>
-<button type="button" id = "mybutton">submit</button>
+<button onclick = "myButton()" >Submit </button>
+<h1 id = "message"></h1>
+<script>
+function myButton(){
+    let myText = document.getElementById("myText");
+    let myMessage = document.getElementById("message");
+    myMessage.innerHTML = "welcome to your tamagotchi " + myText.value;
+}
+</script>
 </body>
 </html>
