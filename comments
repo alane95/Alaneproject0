@@ -1,5 +1,5 @@
 Create a repo for your tamagotchi pet(done)
-Create a Class (JS Class, look at your notes if your forget) for your tamagotchi(done)
+Create a Class (JS Class, look at your notes if your forget) for your tamagotchi
 Instantiate your Tamagotchi
 Display a character of your choice on the screen to represent your pet
 Display the following metrics for your pet:
@@ -16,4 +16,5 @@ You pet should die if Hunger, Boredom, or Sleepiness hits 10.
 
 
 
-1) I will start by creating my button  to display the metrics for my pet
+1) I will start by creating my button(done)
+2)make my button function( )
