@@ -6,10 +6,19 @@ const playEL = document.getElementById("game");
 const sleepEL = document.getElementById("Sleepy");
 // console.log(feedEL);
 
+const food=()=>{
+    console.log(food);
+}
+const myplay=()=>{
+    console.log(myplay);
+}
+const dosleep=()=>{
+    console.log(sleeps);
+}
 
-feedEL.addEventListener('click', fed);
+feedEL.addEventListener('click', food);
 playEL.addEventListener('click', myplay);
-sleepEL.addEventListener('click', slept);
+sleepEL.addEventListener('click', dosleep);
 
 
 
