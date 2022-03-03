@@ -3,7 +3,7 @@ console.log("it's workin");
 
 const feedEL = document.getElementById("food");
 const playEL = document.getElementById("game");
-const sleepEL = document.getElementById("Sleepy");
+const sleepEL = document.getElementById("sleepy");
 // console.log(feedEL);
 
 const food=()=>{
@@ -13,7 +13,7 @@ const myplay=()=>{
     console.log(myplay);
 }
 const dosleep=()=>{
-    console.log(sleeps);
+    console.log(dosleep);
 }
 
 feedEL.addEventListener('click', food);
