@@ -10,7 +10,7 @@ const myCountT= document.getElementById("count-2")
 const myCountH = document.getElementById("count-3")
 // console.log("hi");
 let num= 0;
-// let counter = null;
+let counter = null;
 
 // console.log(myCountO.innerText)
 
