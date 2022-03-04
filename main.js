@@ -10,16 +10,21 @@ const myCountT= document.getElementById("count-2")
 const myCountH = document.getElementById("count-3")
 // console.log("hi");
 let num= 0;
-// my counter function for hunger
-myCountO.innerText= num;
-console.log(myCountO.innerText)
+// let counter = null;
+
+// console.log(myCountO.innerText)
 
 // myCountT.innerText=num;
 // myCountH.innerText=num;
 
 
-const food=()=>{
-    console.log(food);
+function pFood(){
+    // console.log(pFood);
+    counter = setInterval(function(){
+    num++;
+    myCountO.innerText= num;
+},1000);
+    // console.log(num)
 }
 const myplay=()=>{
     console.log(myplay);
@@ -28,7 +33,7 @@ const dosleep=()=>{
     console.log(dosleep);
 }
 
-feedEL.addEventListener('click', food);
+feedEL.addEventListener('click', pFood);
 playEL.addEventListener('click', myplay);
 sleepEL.addEventListener('click', dosleep);
 

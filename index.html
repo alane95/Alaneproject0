@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="main.js" async defer></script>
+    <script src="main.js" async defer > </script>
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -13,13 +13,14 @@
     <button id ="food">Feed</button>
     <button id ="game">Play</button>
     <button id="sleepy">Sleep</button>
-    <div id=" count-1">0</div>
-    <div id=" count-2">0</div>
-    <div id=" count-3">0</div>
+    <div id="count-1">0</div>
+    <div id="count-2">0</div>
+    <div id="count-3">0</div>
 <label >Name Me To Play </label><br>
 <input type="text" id="myText"><br>
 <button onclick = "myButton()" >Submit </button>
 <h1 id = "message"></h1>
+
 <script>
 function myButton(){
     let myText = document.getElementById("myText");
@@ -27,5 +28,6 @@ function myButton(){
     myMessage.innerHTML = "welcome to your tamagotchi " + myText.value;
 }
 </script>
+
 </body>
 </html>
