@@ -11,18 +11,23 @@
 <body>
     <body>
         <h1> tamagotchi </h1>
+        <div>
         <button id ="feed-btn">Feed</button>
         <button id ="play-btn">Play</button>
         <button id="sleep-btn">Sleep</button>
-        <p id="feed-count">0</p>
-        <p id="play-count">0</p>
-        <p id="sleep-count">0</p>
-          <button id="start-button">start</button>
-          <img src="" alt="">
-    <label >Name Me To Play </label><br>
-    <input type="text" id="myText"><br>
-    <button onclick = "myButton()" >Submit </button>
-    <h1 id = "message"></h1>
+        </div>
+        <p id="feed-count">Hunger  0 </p>
+        <p id="play-count">Boredom 0</p>
+        <p id="sleep-count">Sleepiness 0</p>
+        <button id="start-button">start</button>
+        <!-- <img id="my-image" src= alt=""> -->
+        <p>
+            <img alt="" src= "https://i.pinimg.com/originals/ae/a5/50/aea5503452ac0387b5fea012197e56cb.gif"
+                id="imgClickAndChange" onclick="changeImage()" ></p>
+        <label >Name Me To Play </label><br>
+        <input type="text" id="myText"><br>
+        <button onclick = "myButton()" >Submit </button>
+        <h1 id = "message"></h1>
     <!-- <script>
     function myButton(){
         let myText = document.getElementById("myText");
