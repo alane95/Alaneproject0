@@ -9,25 +9,29 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <h1> tamagotchi </h1>
-    <button id ="food">Feed</button>
-    <button id ="game">Play</button>
-    <button id="sleepy">Sleep</button>
-    <div id="count-1">0</div>
-    <div id="count-2">0</div>
-    <div id="count-3">0</div>
-<label >Name Me To Play </label><br>
-<input type="text" id="myText"><br>
-<button onclick = "myButton()" >Submit </button>
-<h1 id = "message"></h1>
-
-<script>
-function myButton(){
-    let myText = document.getElementById("myText");
-    let myMessage = document.getElementById("message");
-    myMessage.innerHTML = "welcome to your tamagotchi " + myText.value;
-}
-</script>
+    <body>
+        <h1> tamagotchi </h1>
+        <button id ="feed-btn">Feed</button>
+        <button id ="play-btn">Play</button>
+        <button id="sleep-btn">Sleep</button>
+        <p id="feed-count">0</p>
+        <p id="play-count">0</p>
+        <p id="sleep-count">0</p>
+          <button id="start-button">start</button>
+          <img src="" alt="">
+    <label >Name Me To Play </label><br>
+    <input type="text" id="myText"><br>
+    <button onclick = "myButton()" >Submit </button>
+    <h1 id = "message"></h1>
+    <!-- <script>
+    function myButton(){
+        let myText = document.getElementById("myText");
+        let myMessage = document.getElementById("message");
+        myMessage.innerHTML = "welcome to your tamagotchi " + myText.value;
+    }
+    </script> -->
+    </body>
+    
 
 </body>
 </html>
