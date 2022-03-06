@@ -2,19 +2,22 @@ body{
     background-color: #f28c3c;
     text-align: center;
 }
-div{
+div {
     display: flex;
-   
-   
-    
+    justify-content: center;
+    gap: 20px;
 }
 img{
     
-    width: 200px
-    
+    width: 200px  
 }
-p{
-    
+
+  #start-button{
+     display: flex;
+     justify-content: flex-start;
+     
+     
+  }  
 /* }
 .highlight {
     background:#f28c3c;

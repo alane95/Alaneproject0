@@ -8,26 +8,30 @@
     <script src="main.js" async defer > </script>
     <link rel="stylesheet" href="style.css"/>
 </head>
-<body>
+
     <body>
-        <h1> tamagotchi </h1>
-        <div>
-        <button id ="feed-btn">Feed</button>
-        <button id ="play-btn">Play</button>
-        <button id="sleep-btn">Sleep</button>
-        </div>
-        <p id="feed-count">Hunger  0 </p>
-        <p id="play-count">Boredom 0</p>
-        <p id="sleep-count">Sleepiness 0</p>
-        <button id="start-button">start</button>
-        <!-- <img id="my-image" src= alt=""> -->
-        <p>
-            <img alt="" src= "https://i.pinimg.com/originals/ae/a5/50/aea5503452ac0387b5fea012197e56cb.gif"
-                id="imgClickAndChange" onclick="changeImage()" ></p>
+        <h1 id = "message"></h1>
         <label >Name Me To Play </label><br>
         <input type="text" id="myText"><br>
         <button onclick = "myButton()" >Submit </button>
-        <h1 id = "message"></h1>
+                    <br>
+        <button id="start-button">start</button>
+        <p id="feed-count">Hunger  0 </p>
+        <p id="play-count">Boredom 0</p>
+        <p id="sleep-count">Sleepiness 0</p>
+        <p id="age-count">Age 0</p>
+        <p>
+            <img alt="" src= "https://i.pinimg.com/originals/ae/a5/50/aea5503452ac0387b5fea012197e56cb.gif"
+                id="imgClickAndChange"></p>
+       
+        <!-- <img id="my-image" src= alt=""> -->
+        
+        <div>
+            <button id ="feed-btn">Feed</button>
+            <button id ="play-btn">Play</button>
+            <button id="sleep-btn">Sleep</button>
+           
+            </div>
     <!-- <script>
     function myButton(){
         let myText = document.getElementById("myText");
@@ -35,8 +39,8 @@
         myMessage.innerHTML = "welcome to your tamagotchi " + myText.value;
     }
     </script> -->
-    </body>
+    
     
 
 </body>
-</html>
+</html> 
