@@ -17,7 +17,7 @@ let num= 0;
 let myCount = null;
 let started = false;
 
-// petAlive .style.opacity= 0;
+// live-pet.style.opacity = 0;
 function buttonStart() {
   if(!started){
     myCount = setInterval(function(){
@@ -50,15 +50,17 @@ const myplay=(body, color )=>{
    if (num >1 ){
       num--
     myCountT.innerText="Boredom " + num;
-    // if (num === 10){
-    //     documet.style.opacity = 100;
+    
     if  (document.getElementById("imgClickAndChange").src == "https://i.pinimg.com/originals/ae/a5/50/aea5503452ac0387b5fea012197e56cb.gif") 
    {
        document.getElementById("imgClickAndChange").src = "https://thumbs.gfycat.com/FlamboyantSpiritedBelugawhale-size_restricted.gif";
    }
    document.body.style.backgroundColor = '#ffffff';
 }
+// if (num === 10){
+//     petAlive.style.opacity = 100;
    }
+
    
 const dosleep=()=>{
  if (num >1 ){
