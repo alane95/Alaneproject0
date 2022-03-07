@@ -60,14 +60,14 @@ const dosleep=()=>{
       num--
     myCountH.innerText="Sleepiness" + num;
     removeImg();
-//     if  (document.getElementById("imgClickAndChange").src == "https://i.pinimg.com/originals/ae/a5/50/aea5503452ac0387b5fea012197e56cb.gif") 
-//    {
-//        document.getElementById("imgClickAndChange").src = "https://thumbs.gfycat.com/TimelyInferiorAcouchi-max-1mb.gif"; 
-//     //    element.className = element.className === 'highlight' ? '' : 'highlight';
-//    }
-let sleepImg = document.createElement("img");
-sleepImg.setAttribute("src","https://thumbs.gfycat.com/TimelyInferiorAcouchi-max-1mb.gif");
-document.querySelector("#changeImg").appendChild(sleepImg);
+    if  (document.getElementById("imgClickAndChange").src == "https://i.pinimg.com/originals/ae/a5/50/aea5503452ac0387b5fea012197e56cb.gif") 
+   {
+       document.getElementById("imgClickAndChange").src = "https://thumbs.gfycat.com/TimelyInferiorAcouchi-max-1mb.gif"; 
+    //    element.className = element.className === 'highlight' ? '' : 'highlight';
+   }
+// let sleepImg = document.createElement("img");
+// sleepImg.setAttribute("src","https://thumbs.gfycat.com/TimelyInferiorAcouchi-max-1mb.gif");
+// document.querySelector("#changeImg").appendChild(sleepImg);
    }
 }
 
