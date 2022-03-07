@@ -114,7 +114,7 @@ startButton.addEventListener('click', buttonStart);
 function myButton(){
     let myText = document.getElementById("myText");
     let myMessage = document.getElementById("message");
-    myMessage.innerHTML = "welcome to your tamagotchi " + myText.value;
+    myMessage.innerHTML = "Hiii " + myText.value + "can you help take care of me? " + "by keeping my action levels under 10 ";
 }
 
 
