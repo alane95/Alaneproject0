@@ -3,21 +3,35 @@ body{
     text-align: center;
     /* border: 1px solid white; */
 }
-div {
+.flex-containe{
     display: flex;
-    justify-content: center;
-    gap: 20px;
 }
 img{
     
     width: 200px  
+} 
+.flex-child {
+    flex: 1;
+    /* border: 2px solid yellow; */
+}  
+.flex-child:first-child {
+    margin-right: 20px;
+} 
+/* div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
+ img{
+    
+    width: 200px  
+} 
 
-   #start-button{
+   /* #start-button{
      display: flex;
      justify-content: center; */  
-  }  
-.count-style{
+  /* }   */
+/* .count-style{
     display: flex;
     flex-direction: column;
     justify-content:flex-end;
@@ -25,7 +39,7 @@ img{
     width: 100px;
   height: 200px;
   line-height: 0.1px;  
+   */ */
   
   
-  
-}
+/* } */ */
