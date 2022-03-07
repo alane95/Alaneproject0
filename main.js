@@ -23,48 +23,52 @@ function buttonStart() {
       myCountO.innerText="Hunger " + num;
       myCountT.innerText="Boredom " + num;
       myCountH.innerText="Sleepiness " + num;
-    //   myAgeCount.innerText="Age " + num;
+      myAgeCount.innerText="Age " + num;
       started = true;
     },2000);
   }
 }
 
 function pFood(body,color){
-    document.body.style.backgroundColor = '#70bfb9';
-    if  (document.getElementById("imgClickAndChange").src == "https://i.pinimg.com/originals/ae/a5/50/aea5503452ac0387b5fea012197e56cb.gif") 
+   if (num > 1 ){
+    num--
+  myCountO.innerText= "Hunger " + num;
+  if  (document.getElementById("imgClickAndChange").src == "https://i.pinimg.com/originals/ae/a5/50/aea5503452ac0387b5fea012197e56cb.gif") 
    {
        document.getElementById("imgClickAndChange").src = "https://i.pinimg.com/originals/55/5c/39/555c39d22c91d954f2892e99bb71e265.gif";
    }
-   if (num >1 ){
-    num--
-  myCountO.innerText= "Hunger " + num;
+   document.body.style.backgroundColor = '#70bfb9';
  }
  
 }
 
-const myplay=()=>{
+const myplay=(body, color )=>{
     // console.log(myplay);
    if (num >1 ){
       num--
     myCountT.innerText="Boredom " + num;
-   }
-   if  (document.getElementById("imgClickAndChange").src == "https://i.pinimg.com/originals/ae/a5/50/aea5503452ac0387b5fea012197e56cb.gif") 
+    if  (document.getElementById("imgClickAndChange").src == "https://i.pinimg.com/originals/ae/a5/50/aea5503452ac0387b5fea012197e56cb.gif") 
    {
        document.getElementById("imgClickAndChange").src = "https://thumbs.gfycat.com/FlamboyantSpiritedBelugawhale-size_restricted.gif";
    }
-
+   document.body.style.backgroundColor = '#ffffff';
 }
+   }
+   
 const dosleep=()=>{
  if (num >1 ){
       num--
     myCountH.innerText="Sleepiness" + num;
+    removeImg();
+//     if  (document.getElementById("imgClickAndChange").src == "https://i.pinimg.com/originals/ae/a5/50/aea5503452ac0387b5fea012197e56cb.gif") 
+//    {
+//        document.getElementById("imgClickAndChange").src = "https://thumbs.gfycat.com/TimelyInferiorAcouchi-max-1mb.gif"; 
+//     //    element.className = element.className === 'highlight' ? '' : 'highlight';
+//    }
+let sleepImg = document.createElement("img");
+sleepImg.setAttribute("src","https://thumbs.gfycat.com/TimelyInferiorAcouchi-max-1mb.gif");
+document.querySelector("#changeImg").appendChild(sleepImg);
    }
-   if  (document.getElementById("imgClickAndChange").src == "https://i.pinimg.com/originals/ae/a5/50/aea5503452ac0387b5fea012197e56cb.gif") 
-   {
-       document.getElementById("imgClickAndChange").src = "https://thumbs.gfycat.com/TimelyInferiorAcouchi-max-1mb.gif"; 
-    //    element.className = element.className === 'highlight' ? '' : 'highlight';
-   }
-
 }
 
 function stopMyCount() {
@@ -78,7 +82,11 @@ function stopMyCount() {
     }
 }
 
-
+const removeImg = () =>{
+    const imgEl = document.querySelector("img")
+    const imgClick = document.querySelector("#changeImg")
+    imgClick .remove(imgEl);
+}
 
 
 feedEl.addEventListener('click', pFood);

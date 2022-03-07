@@ -15,23 +15,24 @@
         <input type="text" id="myText"><br>
         <button onclick = "myButton()" >Submit </button>
                     <br>
-        <button id="start-button">start</button>
+        <div class="count-style">
         <p id="feed-count">Hunger  0 </p>
         <p id="play-count">Boredom 0</p>
         <p id="sleep-count">Sleepiness 0</p>
         <p id="age-count">Age 0</p>
-        <p>
+        </div>
+        <span id ="changeImg">
             <img alt="" src= "https://i.pinimg.com/originals/ae/a5/50/aea5503452ac0387b5fea012197e56cb.gif"
-                id="imgClickAndChange"></p>
-       
+                id="imgClickAndChange"></span>
+                <button id="start-button">start</button>
         <!-- <img id="my-image" src= alt=""> -->
-        
-        <div>
-            <button id ="feed-btn">Feed</button>
+      
+            <div>
+            <button id ="feed-btn" class="btn-feed">Feed</button>
             <button id ="play-btn">Play</button>
             <button id="sleep-btn">Sleep</button>
-           
             </div>
+            <button id="restart-btn">Restart</button>
     <!-- <script>
     function myButton(){
         let myText = document.getElementById("myText");

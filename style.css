@@ -1,6 +1,7 @@
 body{
     background-color: #f28c3c;
     text-align: center;
+    /* border: 1px solid white; */
 }
 div {
     display: flex;
@@ -12,13 +13,19 @@ img{
     width: 200px  
 }
 
-  #start-button{
+   #start-button{
      display: flex;
-     justify-content: flex-start;
-     
-     
+     justify-content: center; */  
   }  
-/* }
-.highlight {
-    background:#f28c3c;
-} */
+.count-style{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    border: 1px solid white;
+    width: 100px;
+  height: 200px;
+  line-height: 0.1px;  
+  
+  
+  
+}
