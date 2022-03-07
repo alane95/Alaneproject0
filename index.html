@@ -10,38 +10,45 @@
 </head>
 
     <body>
-        <h1 id = "message"></h1>
+        <div class="flex-container">
+            <div class="flex-child one">
+        <h1>
+            Welcome To Your Tamagotchi Game
+        </h1>
+        <span id ="changeImg">
+            <img alt="" src= "https://i.pinimg.com/originals/ae/a5/50/aea5503452ac0387b5fea012197e56cb.gif"
+                id="imgClickAndChange"></span>
+                
+    </div>
+                 
+        <div class="flex-child two">
+            <h1 id = "message"></h1>
         <label >Name Me To Play </label><br>
         <input type="text" id="myText"><br>
         <button onclick = "myButton()" >Submit </button>
-                    <br>
-        <div class="count-style">
         <p id="feed-count">Hunger  0 </p>
         <p id="play-count">Boredom 0</p>
         <p id="sleep-count">Sleepiness 0</p>
         <p id="age-count">Age 0</p>
         </div>
-        <span id ="changeImg">
-            <img alt="" src= "https://i.pinimg.com/originals/ae/a5/50/aea5503452ac0387b5fea012197e56cb.gif"
-                id="imgClickAndChange"></span>
-                <button id="start-button">start</button>
+        
         <!-- <img id="my-image" src= alt=""> -->
       
-            <div>
-            <button id ="feed-btn" class="btn-feed">Feed</button>
-            <button id ="play-btn">Play</button>
-            <button id="sleep-btn">Sleep</button>
-            </div>
-            <button id="restart-btn">Restart</button>
+         
     <!-- <script>
     function myButton(){
         let myText = document.getElementById("myText");
         let myMessage = document.getElementById("message");
         myMessage.innerHTML = "welcome to your tamagotchi " + myText.value;
     }
-    </script> -->
-    
-    
-
+    </script> --> 
+</div>
+<footer>
+    <button id="start-button">start</button>
+    <button id ="feed-btn" class="btn-feed">Feed</button>
+    <button id ="play-btn">Play</button>
+    <button id="sleep-btn">Sleep</button>
+    <input type="button" value="Reset" onClick="document.location.reload(true)">
+</footer>
 </body>
 </html> 

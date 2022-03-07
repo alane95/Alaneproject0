@@ -10,6 +10,7 @@ const myCountH = document.getElementById("sleep-count");
 const startButton = document.getElementById("start-button");
 // console.log(startButton);
 const myAgeCount = document.getElementById("age-count");
+// const resetButton = document.getElementById("reset-btn")
 
 let num= 0;
 let myCount = null;
@@ -59,7 +60,7 @@ const dosleep=()=>{
  if (num >1 ){
       num--
     myCountH.innerText="Sleepiness" + num;
-    removeImg();
+    // removeImg();
     if  (document.getElementById("imgClickAndChange").src == "https://i.pinimg.com/originals/ae/a5/50/aea5503452ac0387b5fea012197e56cb.gif") 
    {
        document.getElementById("imgClickAndChange").src = "https://thumbs.gfycat.com/TimelyInferiorAcouchi-max-1mb.gif"; 
@@ -71,6 +72,15 @@ const dosleep=()=>{
    }
 }
 
+// function  gameOver(){
+//     if (pFood >= 10 || myplay >= 10 || dosleep >= 10){
+//         stopMyCount();
+//     feedEl.removeEventListener('click', pFood);
+//     playEl.removEventListener('click', myplay);
+//     sleepEl.removeEventListener('click', dosleep);
+
+//     }
+// }
 function stopMyCount() {
     if (num >= 10){
       clearInterval(myCount)
@@ -82,17 +92,19 @@ function stopMyCount() {
     }
 }
 
-const removeImg = () =>{
-    const imgEl = document.querySelector("img")
-    const imgClick = document.querySelector("#changeImg")
-    imgClick .remove(imgEl);
-}
+
+// const removeImg = () =>{
+//     const imgEl = document.querySelector("img")
+//     const imgClick = document.querySelector("#changeImg")
+//     imgClick .remove(imgEl);
+// }
 
 
 feedEl.addEventListener('click', pFood);
 playEl.addEventListener('click', myplay);
 sleepEl.addEventListener('click', dosleep);
 startButton.addEventListener('click', buttonStart);
+// resetButton .addEventListener('click', gameOver)
 
 
 function myButton(){
