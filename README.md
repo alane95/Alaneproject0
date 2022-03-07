@@ -1,1 +1,2 @@
-# Alaneproject0
+# Tamagotchi Project 
+Have you evevr play a tamagotchi before? Did you own one? if you did not let me tell you about it. A tamagotchi game is a virtual pet keychain egg with three buttons, and when they are press you take care of your pet. Where each of the button is design to feed, play, turn light on/off to put your pet to sleep.  
